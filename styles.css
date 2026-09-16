@@ -36,6 +36,13 @@ button, a { touch-action: manipulation; }
   outline-offset: 4px;
 }
 
+/* Use a high-contrast focus indicator inside dark sections. */
+.cta :focus-visible,
+.site-footer :focus-visible,
+.topline :focus-visible {
+  outline-color: #ffdf70;
+}
+
 .skip-link {
   position: absolute;
   left: 1rem;

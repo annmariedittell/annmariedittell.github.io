@@ -11,7 +11,7 @@
   --paper: #ffffff;
   --offwhite: #f7fafc;
   --line: #d5e1ea;
-  --focus: #ffbf47;
+  --focus: #9c6500;
   --shadow: 0 12px 30px rgba(16, 58, 97, 0.12);
   --radius: 18px;
   --max: 1180px;
@@ -295,6 +295,8 @@ button, a { touch-action: manipulation; }
 .card-link { margin-top: auto; font-weight: 800; display: inline-flex; align-items: center; gap: .35rem; }
 
 .process {
+  list-style: none;
+  padding-left: 0;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;

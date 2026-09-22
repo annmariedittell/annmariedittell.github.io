@@ -1,6 +1,6 @@
 # AnnMarie Dittell Portfolio
 
-Accessible GitHub Pages portfolio for AnnMarie Dittell.
+GitHub Pages portfolio for AnnMarie Dittell, go to: https://annmariedittell.github.io/.
 
 ## Publish
 

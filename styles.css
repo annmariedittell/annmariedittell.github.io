@@ -241,6 +241,7 @@ button, a { touch-action: manipulation; }
   letter-spacing: -.02em;
 }
 .section-intro { max-width: 760px; color: var(--muted); margin-bottom: 2rem; }
+#leadership .section-intro { max-width: none; }
 .section-heading-row {
   display: flex;
   align-items: end;
@@ -330,7 +331,7 @@ button, a { touch-action: manipulation; }
 
 .expertise-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   margin-top: 1.8rem;
 }
@@ -348,6 +349,9 @@ button, a { touch-action: manipulation; }
   padding-block: 2.3rem;
 }
 .cta-row { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+.cta-row > div:first-child { flex: 1 1 0; min-width: 0; }
+.cta-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .85rem; flex: 0 0 auto; }
+.cta-actions .btn { white-space: nowrap; }
 .cta h2 { margin: 0 0 .3rem; font-size: 1.7rem; }
 .cta p { margin: 0; color: #d9edf4; }
 .cta .btn-secondary { background: transparent; color: #fff; border-color: #fff; }

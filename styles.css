@@ -301,7 +301,14 @@ button, a { touch-action: manipulation; }
 
 .case-visual {
   margin-top: 2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: .75rem;
+}
+/* Keep the first case study heading close to its image caption. */
+.case-visual + .prose {
+  padding-top: 1rem;
+}
+.case-visual + .prose > h2:first-child {
+  margin-top: 0;
 }
 .case-visual img {
   width: 100%;

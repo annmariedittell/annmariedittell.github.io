@@ -341,7 +341,13 @@ button, a { touch-action: manipulation; }
 }
 .expertise-item h3 { margin: .45rem 0 .3rem; font-size: 1rem; color: var(--navy-950); }
 .expertise-item p { margin: 0; color: var(--muted); font-size: .9rem; }
-.expertise-icon { font-size: 1.5rem; }
+.expertise-icon {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  font-size: 2.5rem;
+  line-height: 1;
+}
 
 .cta {
   background: linear-gradient(90deg, var(--navy-950), var(--navy-800));

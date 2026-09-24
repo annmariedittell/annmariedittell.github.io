@@ -280,6 +280,12 @@ button, a { touch-action: manipulation; }
   object-fit: cover;
 }
 
+/* Give the three featured homepage images a little more vertical presence.
+   Keep the shared card ratio unchanged on the full case studies page. */
+#case-studies .card-media {
+  aspect-ratio: 3 / 2;
+}
+
 
 /* Program leadership graphics repeat the facts in adjacent accessible text. */
 .program-media {

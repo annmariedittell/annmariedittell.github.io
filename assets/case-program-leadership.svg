@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#103a61"/><stop offset=".55" stop-color="#174c78"/><stop offset="1" stop-color="#0f7f82"/></linearGradient>
+<linearGradient id="board" x2="1" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#e8f5fa"/></linearGradient>
+<linearGradient id="aqua" x2="1" y2="1"><stop stop-color="#6ad8cf"/><stop offset="1" stop-color="#b5e9f8"/></linearGradient>
+<filter id="shadow"><feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#071c39" flood-opacity=".22"/></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<g opacity=".16" fill="none" stroke="#afe9ee" stroke-width="4">
+<circle cx="1295" cy="350" r="320"/><circle cx="1295" cy="350" r="245"/><path d="M100 260Q800-80 1500 260M0 675Q800 250 1600 690"/>
+</g>
+<g fill="#fff" stroke="#97c9e5" stroke-width="5" filter="url(#shadow)">
+<rect x="90" y="125" width="400" height="255" rx="28"/>
+<rect x="1135" y="125" width="360" height="255" rx="28"/>
+<rect x="430" y="190" width="730" height="555" rx="35" fill="url(#board)"/>
+</g>
+<g font-family="Segoe UI,Arial,sans-serif" font-weight="700" fill="#103a61">
+<text x="145" y="195" font-size="26" letter-spacing="3">PROGRAM BUDGET</text>
+<text x="140" y="291" font-size="83">$2.7M</text>
+<text x="1185" y="195" font-size="26" letter-spacing="2">GOVERNANCE</text>
+</g>
+<g fill="#4dbbbd"><rect x="150" y="316" width="38" height="33" rx="6"/><rect x="203" y="298" width="38" height="51" rx="6"/><rect x="256" y="276" width="38" height="73" rx="6"/><rect x="309" y="248" width="38" height="101" rx="6"/><rect x="362" y="217" width="38" height="132" rx="6"/></g>
+<g fill="none" stroke="#35aea8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+<path d="m1188 248 18 17 38-42"/><path d="m1188 302 18 17 38-42"/><path d="m1188 356 18 17 38-42"/>
+</g>
+<g fill="#9dc5d8"><rect x="1260" y="233" width="170" height="12" rx="6"/><rect x="1260" y="287" width="130" height="12" rx="6"/><rect x="1260" y="341" width="156" height="12" rx="6"/></g>
+<g fill="#103a61" font-family="Segoe UI,Arial,sans-serif" font-size="35" font-weight="700">
+<text x="490" y="266">ACCESSIBILITY PROGRAM ROADMAP</text>
+</g>
+<g stroke="#1b668c" stroke-width="7" fill="none"><path d="M502 319H1075"/><path d="m1060 305 16 14-16 14"/></g>
+<g fill="#62b9d0"><circle cx="530" cy="319" r="14"/><circle cx="700" cy="319" r="14"/><circle cx="870" cy="319" r="14"/><circle cx="1040" cy="319" r="14"/></g>
+<g fill="#e0eef7"><rect x="493" y="370" width="595" height="90" rx="16"/><rect x="493" y="479" width="595" height="90" rx="16"/><rect x="493" y="588" width="595" height="90" rx="16"/></g>
+<g fill="#39aaa9"><rect x="520" y="394" width="215" height="20" rx="8"/><rect x="520" y="504" width="260" height="20" rx="8"/><rect x="520" y="612" width="185" height="20" rx="8"/></g>
+<g fill="#acd5e8"><rect x="520" y="425" width="440" height="12" rx="6"/><rect x="520" y="535" width="500" height="12" rx="6"/><rect x="520" y="643" width="405" height="12" rx="6"/></g>
+<g fill="none" stroke="#6ad8cf" stroke-width="8" stroke-linecap="round"><path d="M485 475C250 450 215 560 385 670"/><path d="M1115 475C1350 450 1400 540 1210 690"/></g>
+<g fill="#e9f7fa" filter="url(#shadow)"><circle cx="245" cy="672" r="83"/><circle cx="510" cy="792" r="70"/><circle cx="840" cy="808" r="70"/><circle cx="1215" cy="770" r="76"/><circle cx="1435" cy="670" r="78"/></g>
+<g fill="#174c78">
+<circle cx="245" cy="643" r="24"/><path d="M199 704q46-69 92 0v13h-92z"/>
+<circle cx="510" cy="768" r="20"/><path d="M471 820q39-61 78 0v11h-78z"/>
+<circle cx="840" cy="784" r="20"/><path d="M801 838q39-61 78 0v11h-78z"/>
+<circle cx="1215" cy="741" r="22"/><path d="M1173 797q42-64 84 0v12h-84z"/>
+<circle cx="1435" cy="642" r="23"/><path d="M1392 699q43-66 86 0v12h-86z"/>
+</g>
+<g fill="#38b6b0"><circle cx="308" cy="620" r="11"/><circle cx="570" cy="734" r="9"/><circle cx="900" cy="752" r="9"/><circle cx="1282" cy="728" r="11"/></g>
+</svg>

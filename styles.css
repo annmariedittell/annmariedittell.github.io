@@ -280,9 +280,9 @@ button, a { touch-action: manipulation; }
   object-fit: cover;
 }
 
-/* Give the three featured homepage images a little more vertical presence.
-   Keep the shared card ratio unchanged on the full case studies page. */
-#case-studies .card-media {
+/* Give case study card images more vertical presence while keeping them consistent. */
+#case-studies .card-media,
+.case-studies-grid .card-media {
   aspect-ratio: 3 / 2;
 }
 

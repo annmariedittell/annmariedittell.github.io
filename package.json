@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "test:semantics": "node scripts/semantica11y-audit.mjs",
-    "test:semantics:gate": "node scripts/semantica11y-audit.mjs --fail-on-findings"
+    "test:semantics:gate": "node scripts/semantica11y-audit.mjs --fail-on-findings",
+    "test:semantics:ci": "node scripts/semantica11y-audit.mjs --fail-on-errors"
   },
   "devDependencies": {
     "semantica11y": "1.0.1"

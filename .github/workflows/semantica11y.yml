@@ -1,0 +1,55 @@
+name: Semantica11y Accessibility Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  semantic-accessibility:
+    name: Semantic accessibility audit
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Run Semantica11y
+        run: npm run test:semantics:ci
+
+      - name: Add audit report to job summary
+        if: always()
+        shell: bash
+        run: |
+          if [ -f reports/semantica11y-report.txt ]; then
+            {
+              echo "## Semantica11y report"
+              echo ""
+              echo '~~~text'
+              cat reports/semantica11y-report.txt
+              echo '~~~'
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload Semantica11y report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: semantica11y-report
+          path: reports/semantica11y-report.txt
+          if-no-files-found: warn

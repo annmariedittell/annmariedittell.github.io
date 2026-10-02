@@ -60,7 +60,21 @@ The `reports/` folder and `node_modules/` are ignored by Git so generated report
 npm run test:semantics:gate
 ```
 
-This runs the same audit but returns a failing exit code when Semantica11y reports errors or warnings. This is useful if the test is later added to GitHub Actions or another CI workflow.
+This runs the same audit but returns a failing exit code when Semantica11y reports errors or warnings.
+
+### Automated GitHub Actions check
+
+GitHub Actions automatically runs Semantica11y whenever changes are pushed to the `main` branch or proposed in a pull request.
+
+The automated workflow uses:
+
+```bash
+npm run test:semantics:ci
+```
+
+The CI check fails only when Semantica11y reports an error. Warnings are still shown in the report but do not fail the workflow. This allows reviewed warnings, such as the site's intentional `aria-expanded` mobile navigation pattern, to remain visible without blocking updates.
+
+Each workflow run also uploads `reports/semantica11y-report.txt` as an artifact so the detailed findings can be reviewed from the GitHub Actions run.
 
 Semantica11y is a focused semantic HTML and ARIA checker. It complements, but does not replace, manual WCAG review, keyboard testing, screen-reader testing, or broader automated accessibility testing.
 

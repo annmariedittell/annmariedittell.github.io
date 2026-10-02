@@ -8,6 +8,7 @@ const REPORT_FILE = path.join(REPORT_DIR, 'semantica11y-report.txt');
 const SITE_URL = 'https://annmariedittell.github.io/';
 const SKIP_DIRS = new Set(['.git', 'node_modules', 'reports']);
 const failOnFindings = process.argv.includes('--fail-on-findings');
+const failOnErrors = process.argv.includes('--fail-on-errors');
 
 async function collectHtmlFiles(dir) {
   const entries = await readdir(dir, { withFileTypes: true });
@@ -83,5 +84,8 @@ console.log('Semantica11y focuses on semantic HTML and ARIA patterns; it does no
 
 if (failOnFindings && (totals.errors > 0 || totals.warnings > 0)) {
   console.error('\nAudit gate failed because errors or warnings were found.');
+  process.exitCode = 1;
+} else if (failOnErrors && totals.errors > 0) {
+  console.error('\nCI audit failed because Semantica11y errors were found.');
   process.exitCode = 1;
 }

@@ -454,11 +454,13 @@ button, a { touch-action: manipulation; }
 .case-meta dd { margin: .25rem 0 0; color: var(--muted); }
 .reasoning-flow {
   margin: 2rem 0;
+  padding-left: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: .75rem;
+  list-style-position: inside;
 }
-.reasoning-flow span {
+.reasoning-flow li {
   background: var(--teal-100);
   border: 1px solid #b9e0de;
   border-radius: 10px;

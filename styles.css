@@ -19,6 +19,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+:target { scroll-margin-top: 100px; }
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
